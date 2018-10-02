@@ -12,7 +12,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
-
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -25,13 +26,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section id="website">
-					<div id="qrcode">
-				<a href="https://rubenhm.org/talks/sysreg2018">
-					https://rubenhm.org/talks/sysreg2018</a>
-					<br><br>
-				    </div>
-				</section>
+
 				<section id="intro"
 					data-markdown="mkdown/intro.md"
 					data-separator="^\r?\n\r?\n\r?\n"
@@ -39,14 +34,71 @@
 					data-notes="^Notes:"
 					>
 				</section>
+<!-- 
 				<section id="discussion"
-
-				
 					data-markdown="mkdown/discussion.md"
 					data-separator="^\r?\n\r?\n\r?\n"
 					data-separator-vertical="^\r?\n\r?\n"
 					data-notes="^Notes:"
 					>
+				</section>
+ -->
+				<section id="welfanalysis">
+					<h2>Steps to Welfare Analysis</h2>
+						<ul>
+							<li>Take a moral stance</li>
+							<li>Go with it</li>
+						</ul>
+				</section>
+				<section id="summary">
+				<h2>Summary of paper</h2>
+					<ul>
+						<li>Model</li>
+						<li>Data</li>
+						<li>Welfare</li>
+					</ul>
+				</section>
+				<section id="model">
+					<h2>Model comments</h2>
+					<ul>
+						<li>Policies $~\{t,T\}~$ as exogenous</li>
+						<li>Elasticities $~\{\zeta,\varepsilon\}~$ as constants</li>
+					</ul>
+				</section>
+				<section id="data">
+					<h2>Data comments</h2>
+						<ul>
+							<li>Main effort of paper</li>
+							<li>Match data to model objects</li>
+							<li>No comments</li>
+						</ul>
+				</section>
+				<section id="welfare">
+					<h2>Welfare comments</h2>
+						<ul>
+							<li>Welfare numbers are main contribution</li>
+							<li>Welfare numbers are hidden</li>
+						</ul>
+				</section>
+				<section id="numbers">
+					<h2>Bring welfare numbers to foreground</h2>
+					<ul>
+						<li>LTV threshold</li>
+						<li>With or without <em>price effects</em></li>
+						<li><em>Incidence</em></li>
+					</ul>
+				</section>
+				<section>
+					<p>Test: <i class="fab fa-font-awesome"></i></p>
+					<p>Test: <i class="fas fa-stroopwafel"></i></p>
+				</section>
+
+				<section id="website">
+					<div id="qrcode">
+				<a href="https://rubenhm.org/talks/sysreg2018">
+					https://rubenhm.org/talks/sysreg2018</a>
+					<br><br>
+				    </div>
 				</section>
 			</div>
 		</div>
@@ -67,12 +119,17 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
 				dependencies: [
 					{ src: 'reveal.js/plugin/markdown/marked.js' },
 					{ src: 'reveal.js/plugin/markdown/markdown.js' },
 					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// MathJax
+					{ src: 'reveal.js/plugin/math/math.js', async: true }
 				]
 			});
 		</script>

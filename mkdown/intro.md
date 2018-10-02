@@ -1,6 +1,6 @@
 ## Do Mortgage Subsidies Help or Hurt Borrowers?
 
-### A discussion By 
+### A discussion by 
 
 ### Rubén Hernández Murillo
 
@@ -8,14 +8,3 @@
 
 #### Boston MA
 
-
-
-## Hello
-+ One
-+ Two
-
-
-
-## World
-+ One
-+ Two
