@@ -7,7 +7,7 @@
 		<title>System Regional 2018</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/moon.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -34,20 +34,11 @@
 					data-notes="^Notes:"
 					>
 				</section>
-<!-- 
-				<section id="discussion"
-					data-markdown="mkdown/discussion.md"
-					data-separator="^\r?\n\r?\n\r?\n"
-					data-separator-vertical="^\r?\n\r?\n"
-					data-notes="^Notes:"
-					>
-				</section>
- -->
 				<section id="welfanalysis">
 					<h2>Steps to Welfare Analysis</h2>
-						<ul>
-							<li>Take a moral stance</li>
-							<li>Go with it</li>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-balance-scale"></i></span>Take a moral stance</li>
+							<li><span class="fa-li"><i class="fas fa-car-side"></i></span>Go with it</li>
 						</ul>
 				</section>
 				<section id="summary">
@@ -81,24 +72,20 @@
 						</ul>
 				</section>
 				<section id="numbers">
-					<h2>Bring welfare numbers to foreground</h2>
+					<h2>Bring welfare numbers to the foreground</h2>
 					<ul>
-						<li>LTV threshold</li>
-						<li>With or without <em>price effects</em></li>
-						<li><em>Incidence</em></li>
+						<li>LTV threshold that hurts borrowers</li>
+						<li>Calculations with or without <em>price effects</em></li>
+						<li><em>Incidence</em> of policy change</li>
 					</ul>
 				</section>
-				<section>
-					<p>Test: <i class="fab fa-font-awesome"></i></p>
-					<p>Test: <i class="fas fa-stroopwafel"></i></p>
-				</section>
-
 				<section id="website">
 					<div id="qrcode">
 				<a href="https://rubenhm.org/talks/sysreg2018">
-					https://rubenhm.org/talks/sysreg2018</a>
-					<br><br>
-				    </div>
+					<i class="fab fa-chrome"></i> https://rubenhm.org/talks/sysreg2018</a>
+					<br>
+					</div>
+					<a href="https//rubenhm.org/talks/sysreg2018?print-pdf"><i class="fas fa-file-pdf"></i> PDF export (requires Chrome browser)</a>
 				</section>
 			</div>
 		</div>
@@ -123,6 +110,10 @@
 					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
 				},
+				// Display the page number of the current slide
+				slideNumber: 'c/t',
+				// Vertical centering of slides
+				center: true,
 				dependencies: [
 					{ src: 'reveal.js/plugin/markdown/marked.js' },
 					{ src: 'reveal.js/plugin/markdown/markdown.js' },
