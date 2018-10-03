@@ -45,3 +45,8 @@ div.textcontent {
 	text-transform:none;
 }
 
+.reveal li.li-small {
+	font-size: 60%;
+	color: #878787;
+}
+
