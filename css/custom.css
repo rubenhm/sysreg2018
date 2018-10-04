@@ -50,3 +50,6 @@ div.textcontent {
 	color: #878787;
 }
 
+.reveal ul.fa-ul {
+	list-style-type: none;
+}
